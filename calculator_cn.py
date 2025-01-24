@@ -1,5 +1,5 @@
 import pandas as pd
-gourped_df = pd.read_excel(
+grouped_df = pd.read_excel(
         'data/本科生成绩信息查询_按班级.xls'     # File Name
     ).assign(
         必限=lambda x: x['课程属性'].map({"必修": 1, "限选": 1, "任选": 0}),    # Class Property
