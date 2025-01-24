@@ -19,4 +19,4 @@ gourped_df = pd.read_excel(
     }).assign(
         GPA_必限=lambda x: x['学分绩点_必限'] / x['学分_必限'],      # 计算GPA
         GPA_必限任=lambda x: x['学分绩点_必限任'] / x['学分_必限任']
-    ).reset_index().to_excel('GPA_results.xlsx', index=False)
+    ).reset_index().to_excel('data/GPA_results.xlsx', index=False)

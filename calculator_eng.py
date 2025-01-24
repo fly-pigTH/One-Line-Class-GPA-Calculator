@@ -19,4 +19,4 @@ grouped_df = pd.read_excel(
     }).assign(
         GPA_Req_Elec=lambda x: x['Grade_Credits_Req_Elec'] / x['Credits_Req_Elec'],      # Calculate GPA
         GPA_Req_Elec_Free=lambda x: x['Grade_Credits_Req_Elec_Free'] / x['Credits_Req_Elec_Free']
-    ).reset_index()#.to_excel('GPA_results.xlsx', index=False)
+    ).reset_index().to_excel('data/GPA_results.xlsx', index=False)
